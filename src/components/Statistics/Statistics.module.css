@@ -1,0 +1,30 @@
+.statistics {
+  width: 400px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.stat-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  padding: 15px;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid grey;
+}
+
+.label {
+  display: block;
+}
