@@ -1,0 +1,25 @@
+.transaction-history {
+  margin: 50px auto;
+  table-layout: fixed;
+  width: 500px;
+  border-collapse: collapse;
+  border: 1px solid grey;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+thead {
+  font-weight: 700;
+  background-color: #e1e1e1;
+}
+
+thead th {
+  width: 30%;
+  border: 1px solid grey;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid grey;
+}
