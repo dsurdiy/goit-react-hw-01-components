@@ -1,12 +1,21 @@
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import styles from './FriendListItem.module.css';
+
+const Status = styled.span`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: ${props => (props.isOnline ? 'green' : 'red')};
+`;
 
 export function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <div class="item">
-      <span class="status">{isOnline}</span>
-      <img class="avatar" src={avatar} alt={name} width="48" />
-      <p class="name">{name}</p>
-    </div>
+    <>
+      <Status isOnline={isOnline} />
+      <img className={styles.avatar} src={avatar} alt={name} width="48" />
+      <p className={styles.name}>{name}</p>
+    </>
   );
 }
 
